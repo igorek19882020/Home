@@ -28,10 +28,30 @@
         color: #bcc3c5;
         padding-top: 10px;
         padding-bottom: 10px;
-        
     }
 }
-.dot{
+
+.menu__list-item {
+    text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+    display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный 
+    line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+}
+.menu__list-item:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 3px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: $yellow; /*цвет фона элемента*/
+    /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+    bottom: 0;
+    left: 0;
+}
+.menu__list-item:hover:after,
+.menu__list-item:focus:after {
+    width: 100%;
+}
+
+.dot {
     width: 0;
     height: 15px;
     border-left: #323232 1px dotted;
@@ -47,4 +67,28 @@
     color: $yellow;
 }
 
-
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.region {
+    @include f300;
+    font-size: 13px;
+    line-height: 20px;
+    color: #040d0d;
+    span {
+        color: #4673ab;
+        border-bottom: 1px dotted;
+    }
+}
+.authblock a {
+    @include f300;
+    color: #4673ab;
+    font-size: 13px;
+    line-height: 20px;
+    border-bottom: 1px solid;
+}
+.access {
+    margin-right: 20px;
+}
