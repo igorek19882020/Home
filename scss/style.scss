@@ -1,0 +1,50 @@
+@import "fonts";
+@import "vars";
+@import "global";
+
+.top__menu {
+    background-color: #040d0d;
+}
+.menu__list > li:not(:first-child) > a {
+    padding-left: 20px;
+}
+.menu__list > li:not(:last-child) > a {
+    padding-right: 20px;
+}
+
+.menu__list {
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__list-item {
+    display: inline-block;
+
+    a {
+        @include f300;
+        font-size: 13px;
+        line-height: 20px;
+        color: #bcc3c5;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+}
+.dot{
+    width: 0;
+    height: 15px;
+    border-left: #323232 1px dotted;
+    margin-top: 12.5px;
+}
+.menu__list-item.ar {
+    position: relative;
+}
+.menu__list-item.ar > a::after {
+    content: "\25BC";
+    position: absolute;
+    margin-left: 10px;
+    color: $yellow;
+}
+
+

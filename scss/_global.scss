@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body{
+   
+  
+  }
+  a {
+    display: inline-block;
+    text-decoration: none ;
+    color:black;
+   
+  }
+  
+  a, a:link, a:visited, a:focus, a:hover, a:active{
+  //  color: #2F3035;
+    text-decoration:none; 
+   
+  }
+  
+  
+  
+  ul,
+  li,nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  p{
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 10px;
+  }
+  
+  
+  
+  
