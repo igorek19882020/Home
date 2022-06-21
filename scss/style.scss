@@ -92,3 +92,24 @@
 .access {
     margin-right: 20px;
 }
+.header__bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    @include f300;
+    font-size: 46px;
+    line-height: 38px;
+    color: #040d0d;
+}
+.logo > span {
+    color: #ff5816;
+    background-image: url(../images/logo-bg.jpg);
+    border-radius: 10px;
+    margin: 0px 3px;
+    padding: 4px 5px;
+}
+.slogan{
+    
+}
